@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import { ThemeProvider } from "@mui/material/styles";
 import { AppRouterCacheProvider } from "@mui/material-nextjs/v14-appRouter";
-import { theme } from "@/features/theme";
+import { theme } from "@/features/mui/theme";
 import "./globals.css";
 
 const roboto = Roboto({
