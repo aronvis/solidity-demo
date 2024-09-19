@@ -11,5 +11,8 @@ module.exports = {
   },
   paths: {
     sources: "./blockchain/contracts",
+    tests: "./blockchain/test",
+    cache: "./blockchain/cache",
+    artifacts: "./blockchain/artifacts",
   },
 };
