@@ -14,9 +14,6 @@ const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
 // callback. The callback must define the tests of that section. This callback
 // can't be an async function.
 describe("Token contract", function () {
-  // We define a fixture to reuse the same setup in every test. We use
-  // loadFixture to run this setup once, snapshot that state, and reset Hardhat
-  // Network to that snapshot in every test.
   async function deployTokenFixture() {
     // Get the ContractFactory and Signers here.
     const Token = await ethers.getContractFactory("Token");
@@ -35,13 +32,7 @@ describe("Token contract", function () {
 
   // You can nest describe calls to create subsections.
   describe("Deployment", function () {
-    // `it` is another Mocha function. This is the one you use to define your
-    // tests. It receives the test name, and a callback function.
-    //
-    // If the callback function is async, Mocha will `await` it.
     it("Should set the right owner", async function () {
-      // We use loadFixture to setup our environment, and then assert that
-      // things went well
       const { hardhatToken, owner } = await loadFixture(deployTokenFixture);
 
       // Expect receives a value and wraps it in an assertion object. These
