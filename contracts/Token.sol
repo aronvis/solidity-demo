@@ -30,7 +30,7 @@ contract Token {
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
-        require(balanceOf[msg.sender] >= _value);
+        require(balanceOf[msg.sender] >= _value, "Not enough tokens");
 
         console.log(
             "Transferring funds",
@@ -60,8 +60,9 @@ contract Token {
     }
 
     function transferFrom(address _from, address _to, uint256 _value) public returns (bool success) {
-        require(_value <= balanceOf[_from]);
-        require(_value <= allowance[_from][msg.sender]);
+        require(_value <= balanceOf[_from], "Not enough tokens");
+        require(_value <= allowance[_from][msg.sender], "Insufficient allowance");
+
         balanceOf[_from] -= _value;
         balanceOf[_to] += _value;
         allowance[_from][msg.sender] -= _value;
