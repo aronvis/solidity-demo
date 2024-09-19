@@ -36,5 +36,5 @@ yarn-error.log*
 next-env.d.ts
 
 # hardhat
-/blockchain/artifacts
-/blockchain/cache
+/artifacts
+/cache
