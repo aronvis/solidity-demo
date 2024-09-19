@@ -2,10 +2,10 @@
 
 pragma solidity ^0.8.13;
 
-contract DappToken {
+contract Token {
     // Member variables
-    string  public name = "DApp Token";
-    string  public symbol = "DAPP";
+    string  public name = "Token";
+    string  public symbol = "ARG";
     uint256  public totalSupply = 1000000000000000000000000;
     uint8 public decimals = 18;
 
