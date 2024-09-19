@@ -2,6 +2,8 @@
 
 pragma solidity ^0.8.13;
 
+import "hardhat/console.sol";
+
 contract Token {
     // Member variables
     string  public name = "Token";
@@ -29,6 +31,14 @@ contract Token {
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
         require(balanceOf[msg.sender] >= _value);
+
+        console.log(
+            "Transferring funds",
+            msg.sender,
+            _to,
+            _value
+        );
+
         balanceOf[msg.sender] -= _value;
         balanceOf[_to] += _value;
         emit Transfer(msg.sender, _to, _value);
@@ -37,6 +47,14 @@ contract Token {
 
     function approve(address _spender, uint256 _value) public returns (bool success) {
         allowance[msg.sender][_spender] = _value;
+
+        console.log(
+            "Approve spend",
+            msg.sender,
+            _spender,
+            _value
+        );
+
         emit Approval(msg.sender, _spender, _value);
         return true;
     }
