@@ -1,0 +1,110 @@
+{
+  "_format": "hh-sol-cache-2",
+  "files": {
+    "/Users/aronvischjager/Documents/Solidity/solidity-demo/blockchain/contracts/EthSwap.sol": {
+      "lastModificationDate": 1726755870715,
+      "contentHash": "c3391c9214b24dadfedd85126dc83aac",
+      "sourceName": "blockchain/contracts/EthSwap.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "EthSwap"
+      ]
+    },
+    "/Users/aronvischjager/Documents/Solidity/solidity-demo/blockchain/contracts/Migrations.sol": {
+      "lastModificationDate": 1726744744910,
+      "contentHash": "507ce869a034f6ccd3bd54f7b2ac90a9",
+      "sourceName": "blockchain/contracts/Migrations.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "Migrations"
+      ]
+    },
+    "/Users/aronvischjager/Documents/Solidity/solidity-demo/blockchain/contracts/Token.sol": {
+      "lastModificationDate": 1726748002952,
+      "contentHash": "2a2e99f5b821890910685be2d78157d2",
+      "sourceName": "blockchain/contracts/Token.sol",
+      "solcConfig": {
+        "version": "0.8.13",
+        "settings": {
+          "optimizer": {
+            "enabled": true,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.13"
+      ],
+      "artifacts": [
+        "DappToken"
+      ]
+    }
+  }
+}
