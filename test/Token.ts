@@ -1,11 +1,12 @@
-const { expect } = require("chai");
-const { loadFixture } = require("@nomicfoundation/hardhat-network-helpers");
+import { loadFixture } from "@nomicfoundation/hardhat-toolbox/network-helpers";
+import { expect } from "chai";
+import hre from "hardhat";
 
 describe("Token contract", function () {
   async function deployTokenFixture() {
     // Get the ContractFactory and Signers here.
-    const Token = await ethers.getContractFactory("Token");
-    const [owner, addr1, addr2] = await ethers.getSigners();
+    const Token = await hre.ethers.getContractFactory("Token");
+    const [owner, addr1, addr2] = await hre.ethers.getSigners();
     const hardhatToken = await Token.deploy();
     await hardhatToken.waitForDeployment();
 
