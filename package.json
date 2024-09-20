@@ -7,7 +7,7 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy": "npx hardhat ignition deploy ./ignition/modules/deploy-token --network sepolia"
+    "deploy": "npx hardhat ignition deploy ./ignition/modules/token.ts --network sepolia"
   },
   "dependencies": {
     "@emotion/cache": "^11.13.1",
