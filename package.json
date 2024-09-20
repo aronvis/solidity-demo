@@ -8,7 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "test-contract": "npx hardhat test",
-    "deploy-contract": "npx hardhat ignition deploy ./ignition/modules/token.ts --network sepolia"
+    "deploy-contract": "npx hardhat ignition deploy ./ignition/modules/deploy.ts --network sepolia"
   },
   "dependencies": {
     "@emotion/cache": "^11.13.1",
