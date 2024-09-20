@@ -27,7 +27,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "test"
-  ],
+, "scripts/deploy.js"  ],
   "files": ["./hardhat.config.js"],
   "exclude": ["node_modules"]
 }
